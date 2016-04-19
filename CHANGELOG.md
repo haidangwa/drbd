@@ -2,6 +2,11 @@ drbd Cookbook CHANGELOG
 =======================
 This file is used to list changes made in each version of the drbd cookbook.
 
+v0.10.1 (2016-04-18
+-------------------
+* Merge fix-elrepo-bug branch from https://github.com/esabelhaus/drbd
+* simplify the include_recipe
+
 v0.10.0 (2015-10-20)
 -------------------
 * Converted Chef::Shellout to Mixlib::Shellout to prevent deprecation warnings

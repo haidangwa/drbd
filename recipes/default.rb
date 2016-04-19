@@ -22,9 +22,7 @@ node.save unless Chef::Config[:solo]
 
 case node['platform']
 when 'rhel', 'fedora', 'suse'
-  if node['drbd']['custom_repo'] != true
-    include_recipe 'yum-elrepo'
-  end
+  include_recipe 'yum-elrepo' unless node['drbd']['custom_repo'] == true
 end
 
 drbd_packages = value_for_platform_family(
