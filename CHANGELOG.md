@@ -6,6 +6,7 @@ v0.10.1 (2016-04-18
 -------------------
 * Merge fix-elrepo-bug branch from https://github.com/esabelhaus/drbd
 * simplify the include_recipe
+* set default fs_type to ext4
 
 v0.10.0 (2015-10-20)
 -------------------
