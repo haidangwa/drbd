@@ -20,7 +20,7 @@
 # prime the search to avoid 2 masters
 node.save unless Chef::Config[:solo]
 
-case node['platform']
+case node['platform_family']
 when 'rhel', 'fedora', 'suse'
   include_recipe 'yum-elrepo' unless node['drbd']['custom_repo'] == true
 end
