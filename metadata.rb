@@ -6,7 +6,7 @@ description 'Installs/Configures drbd.'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.10.1'
 
-depends 'yum-elrepo'
+depends 'yum-elrepo', '~> 0.2.5'
 
 %w(ubuntu debian redhat centos scientific oracle amazon).each do |os|
   supports os
